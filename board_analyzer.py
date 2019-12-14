@@ -74,7 +74,7 @@ class Analyzer:
             self.screen_size_y = int(args['height'])
 
         self.board = Board()
-        self.predictor = Predictor('NN/smallvggnet.model', 'NN/smallvggnet_lb.pickle')
+        self.predictor = Predictor('NN/boardidentifier.model', 'NN/boardidentifier_lb.pickle')
     
     def analyze(self):
 
@@ -156,6 +156,7 @@ class Analyzer:
                 screenshot = Image.alpha_composite(screenshot, overlay_image)
             screenshot = screenshot.resize((1280, 720))
             screenshot.save('result.png', 'PNG')
+        os.remove('screenshot.png')
 
     def board_to_screen_position(self, screen_size, r, c, frequency_board, uses_board):
         y_start = 0
