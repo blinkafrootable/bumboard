@@ -156,6 +156,8 @@ class Analyzer:
                 screenshot = Image.alpha_composite(screenshot, overlay_image)
             screenshot = screenshot.resize((1280, 720))
             screenshot.save('result.png', 'PNG')
+            if self.auto_show == True:
+                screenshot.show()
         os.remove('screenshot.png')
 
     def board_to_screen_position(self, screen_size, r, c, frequency_board, uses_board):
