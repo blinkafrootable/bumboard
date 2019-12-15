@@ -1,4 +1,9 @@
 
+"""
+Code by blinkafrootable
+https://github.com/blinkafrootable/bumboard/
+"""
+
 from PIL import Image, ImageDraw
 import pyautogui
 import time
