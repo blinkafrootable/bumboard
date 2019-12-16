@@ -7,6 +7,7 @@ The following Python modules need to be installed in order to run this program:
 - pillow
 - numpy
 - cv2
+- tensorflow
 - keras
 
 This command should install them all:
