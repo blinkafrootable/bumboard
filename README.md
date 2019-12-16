@@ -10,7 +10,7 @@ The following Python modules need to be installed in order to run this program:
 - keras
 
 This command should install them all:
-`pip install keyboard pyautogui pillow numpy cv2 keras`
+`pip install keyboard pyautogui pillow numpy cv2 tensorflow keras`
 
 When scanning the board, make sure your mouse it outside the red area:
 ![Bumbo screenshot with red box around the game board](https://github.com/blinkafrootable/bumboard/blob/master/github-resources/no-mouse-zone.png)
